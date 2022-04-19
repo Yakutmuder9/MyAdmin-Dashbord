@@ -7,14 +7,17 @@
     "lite": "lite-server",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
- },
+  },
   "author": "Yakut",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
     "bootstrap": "^4.5.2",
+    "bootstrap-icons": "^1.8.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }

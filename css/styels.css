@@ -1,12 +1,61 @@
 *,
 ::after,
-::before{
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
-:root{
+
+:root {
     --dark: rgb(0, 0, 0);
     --light: #fff;
+}
+
+body {
+    background: linear-gradient(123.9deg, #1D007E 3.71%, #EBE4FF 70.1%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+aside {
+    background: #000055;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+main {
+    overflow-y: scroll;
+    margin-left: 0px;
+}
+
+@media (min-width: 992px) {
+    main {
+        margin-left: 220px;
+    }
 }
