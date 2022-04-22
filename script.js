@@ -1,14 +1,18 @@
-document.addEventListener("DOMContentLoaded", function(){
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-          document.getElementById('navbar_top').classList.add('fixed-top');
-          // add padding top to show content behind navbar
-          navbar_height = document.querySelector('.navbar').offsetHeight;
-          document.body.style.paddingTop = navbar_height + 'px';
-        } else {
-          document.getElementById('navbar_top').classList.remove('fixed-top');
-           // remove padding top from body
-          document.body.style.paddingTop = '0';
-        } 
-    });
-  }); 
+const navbarTop = document.getElementById("navbar_top")
+const sideToggler = document.getElementById("side_toggler")
+const navLinkText = document.querySelector("navlikn_text")
+
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 20) {
+        navbarTop.classList.add('bg-dark');
+          console.log("scroll20 and more")
+      } else {
+        navbarTop.classList.remove('bg-dark');
+        console.log("scroll20 and less")
+      } 
+  });
+
+sideToggler.addEventListener('click', function() {
+  document.getElementById('sidenav-main').style.width='5vw';
+  document.getElementById('navlikn_text').style.display="none!important";
+})
