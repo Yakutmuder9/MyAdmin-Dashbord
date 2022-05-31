@@ -89,57 +89,61 @@ main {
     box-shadow: inset 20px 20px 60px #1c036e,
         inset -20px -20px 60px #260594;
 }
-#setting:hover{
+
+#setting:hover {
     transform: rotate(360deg);
     color: #000055;
     font-size: large;
 }
-.notification span{
+
+.notification span {
     margin-top: -10px;
     border-radius: 50%;
 }
 
-#course_icon img{
+#course_icon img {
     width: 90%;
     height: 90%;
 }
 
-#columnchart_values{
-    width: 98%!important;
+#columnchart_values {
+    width: 98% !important;
     height: 200px;
     overflow-x: hidden;
 }
 
 
-#signin_svg img{
+#signin_svg img {
     width: 90%;
     height: 100%;
 }
 
-#sign_in_page{
-    width: 100vw!important;
-    height: auto!important;
+#sign_in_page {
+    width: 100vw !important;
+    height: auto !important;
     overflow-y: hidden;
     overflow-y: scroll;
 }
-.sidenav-header{
+
+.sidenav-header {
     background: #000055;
 }
-.curve_chart{
-    width: 80%!important;
-    height: 50vh!important;
-    background: red!important;
+
+.curve_chart {
+    width: 80% !important;
+    height: 50vh !important;
+    background: red !important;
     overflow-x: hidden;
 }
 
 
-    
-    
- 
-  
-  
-  /*------------Event page style------------*/ 
-  #calendar {
+
+
+
+
+
+/*------------Event page style------------*/
+#calendar {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -147,14 +151,16 @@ main {
     border-left: 1px solid #c6c6c6;
     position: relative;
     z-index: 0;
-  }
- #day-labels {
+}
+
+#day-labels {
     width: 100%;
     border-bottom: 1px solid #c6c6c6;
     border-right: 1px solid #c6c6c6;
     overflow: auto;
-  }
-  .label {
+}
+
+.label {
     width: 14.285714286%;
     float: left;
     text-align: right;
@@ -163,12 +169,14 @@ main {
     letter-spacing: 1px;
     color: #7a7a7a;
     background: rgba(255, 255, 255, 0.95);
-  }
-  .week {
+}
+
+.week {
     width: 100%;
     overflow: hidden;
-  }
-  .day {
+}
+
+.day {
     width: 14.285714286%;
     padding-bottom: 14.285714286%;
     border-right: 1px solid #c6c6c6;
@@ -177,8 +185,9 @@ main {
     float: left;
     position: relative;
     background: rgba(255, 255, 255, 0.95);
-  }
-   .date {
+}
+
+.date {
     display: block;
     position: absolute;
     top: 5px;
@@ -190,37 +199,98 @@ main {
     line-height: 25px;
     font-size: 14px;
     color: #7a7a7a;
-  }
-  
-   .day:first-of-type,  .day:last-of-type {
+}
+
+.day:first-of-type,
+.day:last-of-type {
     background-color: rgba(235, 235, 235, 0.95);
-  }
-   .day:hover {
+}
+
+.day:hover {
     background-color: #305dd4;
     cursor: pointer;
-  }
-   .day:hover.noDate {
+}
+
+.day:hover.noDate {
     background: rgba(255, 255, 255, 0.95);
     cursor: default;
-  }
-  .day:hover .date {
+}
+
+.day:hover .date {
     color: #cfdef4;
-  }
-  .day:hover .date.today {
+}
+
+.day:hover .date.today {
     background: #cfdef4;
     color: #305dd4;
-  }
+}
 
- #myForm1 input{
+#myForm1 input {
     background: linear-gradient(90deg, #5C43BC 11.83%, rgba(218, 211, 255, 0) 115.35%);
     color: whitesmoke;
     outline: none;
-  }
-  #myForm1 input[type="submit"]:disabled {
+}
+
+#myForm1 input[type="submit"]:disabled {
     background-color: red;
-  }
-  .form-control:focus {
+}
+
+.form-control:focus {
     border-color: white;
     box-shadow: black;
     outline: none;
-} 
+}
+
+#card-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.courses-inner {
+    background: linear-gradient(rgba(66, 75, 83, 0.6), rgba(38, 91, 135, 0.3));
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    padding:  15px 15px 15px 50px;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 2px 5px 20px darkblue;
+    color: whitesmoke;
+}
+
+.courses-inner button {
+    background: rgba(142, 166, 170, 0.001);
+    box-shadow: inset 0px -3px 16px rgba(255, 255, 255, 0.6), inset 0px -5px 13px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.navbar-toggler{
+    color: #fff!important;
+}
+
+.card-body form{
+    color:silver;
+}
+.navbar{
+    color: silver!important;
+    box-shadow: 2px 5px 20px darkblue;
+}
+.index .card-body{
+    box-shadow: 2px 5px 20px darkblue;
+}
+.profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.position-relative img{
+    width: 100%;
+    height: 80%;
+    border-radius: 5%;
+}
+#card_images .clard-body img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

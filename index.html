@@ -66,10 +66,10 @@
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
         ['Year', 'Work', 'Expenses'],
-        ['2004', 1000, 400],
-        ['2005', 1170, 460],
-        ['2006', 660, 1120],
-        ['2007', 1030, 540]
+        ['2019', 100, 40],
+        ['2020', 117, 46],
+        ['2021', 66, 112],
+        ['2022', 103, 54]
       ]);
 
       var options = {
@@ -85,7 +85,7 @@
   </script>
 </head>
 
-<body>
+<body class="index">
 
   <div class="dashbord d-flex justify-content-end">
     <div class="aside_container vw-100 d-none position-absolute d-lg-block d-xl-block vh-100">
@@ -216,18 +216,20 @@
         <nav class="navbar navbar-main navbar-expand-lg  sticky-top bg-dark " id="navbar_top">
           <div class=" w-100 py-1 px-3 d-flex justify-content-between">
 
-            
+
             <nav class="navbar navbar-light d-block .d-sm-none d-lg-none">
               <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon text-secondary"></span>
+              <button class="navbar-toggler " style="color: #fff!important; font-size:28px;" type="button"
+                data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
               </button>
-    
+
               <div class="collapse navbar-collapse p-3 " id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li class="nav-item active">
-                    <a class="nav-link text-white text-bold" href="index.html">Dashboard<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white text-bold" href="index.html">Dashboard<span
+                        class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-secondary" href="course.html">Courses</a>
@@ -251,7 +253,7 @@
                 </form>
               </div>
             </nav>
-            
+
             <div aria-label="breadcrumb">
               <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                 <li class="breadcrumb-item text-sm">
@@ -301,7 +303,7 @@
           </div>
         </nav>
 
- 
+
 
         <div class="row mt-3">
           <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
@@ -547,7 +549,7 @@
         </div>
         <div class="row my-4">
           <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
-            <div class="card">
+            <div class="card" id="card-icons">
               <div class="card-header pb-0">
                 <div class="row">
                   <div class="col-lg-6 col-7">
@@ -584,13 +586,13 @@
                     <thead>
                       <tr>
                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                          Companies
+                          Courses
                         </th>
                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                          Members
+                          Groups
                         </th>
                         <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                          Budget
+                          Projects
                         </th>
                         <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                           Completion
@@ -605,7 +607,7 @@
                               <img src="img/bootstrap.png" class="avatar avatar-sm me-3" alt="xd" />
                             </div>
                             <div class="d-flex flex-column justify-content-center">
-                              <h6 class="mb-0 text-sm">Soft UI XD Version</h6>
+                              <h6 class="mb-0 text-sm"> Bootstrap 5 Version</h6>
                             </div>
                           </div>
                         </td>
@@ -617,21 +619,21 @@
                             </a>
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Romina Hadid">
-                              <img src="" alt="team2" />
+                              <img src="img/p2.jpg" alt="team2" />
                             </a>
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Alexander Smith">
-                              <img src="" alt="team3" />
+                              <img src="img/p3.jpg" alt="team3" />
                             </a>
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Jessica Doe">
-                              <img src="" alt="team4" />
+                              <img src="img/p4.jpg" alt="team4" />
                             </a>
                           </div>
                         </td>
                         <td class="align-middle text-center text-sm">
                           <span class="text-xs font-weight-bold">
-                            $14,000
+                            122
                           </span>
                         </td>
                         <td class="align-middle">
@@ -643,8 +645,8 @@
                                 </div>
                               </div>
                               <div class="progress">
-                                <div class="progress-bar bg-gradient-info w-25" aria-valuenow="100"
-                                  aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-gradient-info w-25" aria-valuenow="100" aria-valuemin="0"
+                                  aria-valuemax="100"></div>
                               </div>
                             </div>
                         </td>
@@ -653,10 +655,10 @@
                         <td>
                           <div class="d-flex px-2 py-1">
                             <div>
-                              <img src="" class="avatar avatar-sm me-3" alt="atlassian" />
+                              <img src="img/js.png" class="avatar avatar-sm me-3" alt="atlassian" />
                             </div>
                             <div class="d-flex flex-column justify-content-center">
-                              <h6 class="mb-0 text-sm">Add Progress Track</h6>
+                              <h6 class="mb-0 text-sm"> Add Progress Track</h6>
                             </div>
                           </div>
                         </td>
@@ -664,16 +666,16 @@
                           <div class="avatar-group mt-2">
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Romina Hadid">
-                              <img src="" alt="team5" />
+                              <img src="img/p5.jpg" alt="team5" />
                             </a>
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Jessica Doe">
-                              <img src="" alt="team6" />
+                              <img src="img/p6.jpg" alt="team6" />
                             </a>
                           </div>
                         </td>
                         <td class="align-middle text-center text-sm">
-                          <span class="text-xs font-weight-bold"> $3,000 </span>
+                          <span class="text-xs font-weight-bold"> 76 </span>
                         </td>
                         <td class="align-middle">
                           <div class="progress-wrapper w-75 mx-auto">
@@ -693,10 +695,10 @@
                         <td>
                           <div class="d-flex px-2 py-1">
                             <div>
-                              <img src="" class="avatar avatar-sm me-3" alt="team7" />
+                              <img src="img/figma.png" class="avatar avatar-sm me-3" alt="team7" />
                             </div>
                             <div class="d-flex flex-column justify-content-center">
-                              <h6 class="mb-0 text-sm">Fix Platform Errors</h6>
+                              <h6 class="mb-0 text-sm">Figma Community Platform </h6>
                             </div>
                           </div>
                         </td>
@@ -704,11 +706,11 @@
                           <div class="avatar-group mt-2">
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Romina Hadid">
-                              <img src="" alt="team8" />
+                              <img src="img/p3.jpg" alt="team8" />
                             </a>
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Jessica Doe">
-                              <img src="" alt="team9" />
+                              <img src="img/p7.jpg" alt="team9" />
                             </a>
                           </div>
                         </td>
@@ -735,11 +737,11 @@
                         <td>
                           <div class="d-flex px-2 py-1">
                             <div>
-                              <img src="" class="avatar avatar-sm me-3" alt="spotify" />
+                              <img src="img/react.png" class="avatar avatar-sm me-3" alt="spotify" />
                             </div>
                             <div class="d-flex flex-column justify-content-center">
                               <h6 class="mb-0 text-sm">
-                                Launch our Mobile App
+                                Launch our Mobile React App
                               </h6>
                             </div>
                           </div>
@@ -748,25 +750,21 @@
                           <div class="avatar-group mt-2">
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Ryan Tompson">
-                              <img src="" alt="user1" />
+                              <img src="img/p2.jpg" alt="user1" />
                             </a>
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Romina Hadid">
-                              <img src="" alt="user2" />
+                              <img src="img/p5.jpg" alt="user2" />
                             </a>
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Alexander Smith">
-                              <img src="" alt="user3" />
-                            </a>
-                            <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
-                              data-bs-placement="bottom" title="Jessica Doe">
-                              <img src="" alt="user4" />
+                              <img src="img/p7.jpg" alt="user3" />
                             </a>
                           </div>
                         </td>
                         <td class="align-middle text-center text-sm">
                           <span class="text-xs font-weight-bold">
-                            $20,500
+                            120
                           </span>
                         </td>
                         <td class="align-middle">
@@ -787,11 +785,11 @@
                         <td>
                           <div class="d-flex px-2 py-1">
                             <div>
-                              <img src="" class="avatar avatar-sm me-3" alt="jira" />
+                              <img src="img/photoshop.png" class="avatar avatar-sm me-3" alt="jira" />
                             </div>
                             <div class="d-flex flex-column justify-content-center">
                               <h6 class="mb-0 text-sm">
-                                Add the New Pricing Page
+                                Add the New features With Photoshop
                               </h6>
                             </div>
                           </div>
@@ -800,12 +798,12 @@
                           <div class="avatar-group mt-2">
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Ryan Tompson">
-                              <img src="" alt="user5" />
+                              <img src="img/p1.jpg" alt="user5" />
                             </a>
                           </div>
                         </td>
                         <td class="align-middle text-center text-sm">
-                          <span class="text-xs font-weight-bold"> $500 </span>
+                          <span class="text-xs font-weight-bold"> 50 </span>
                         </td>
                         <td class="align-middle">
                           <div class="progress-wrapper w-75 mx-auto">
@@ -825,11 +823,11 @@
                         <td>
                           <div class="d-flex px-2 py-1">
                             <div>
-                              <img src="" class="avatar avatar-sm me-3" alt="invision" />
+                              <img src="img/fire.png" class="avatar avatar-sm me-3" alt="invision" />
                             </div>
                             <div class="d-flex flex-column justify-content-center">
                               <h6 class="mb-0 text-sm">
-                                Redesign New Online Shop
+                                Firebase Plegin used projects
                               </h6>
                             </div>
                           </div>
@@ -838,16 +836,16 @@
                           <div class="avatar-group mt-2">
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Ryan Tompson">
-                              <img src="" alt="user6" />
+                              <img src="img/p7.jpg" alt="user6" />
                             </a>
                             <a href="" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                               data-bs-placement="bottom" title="Jessica Doe">
-                              <img src="" alt="user7" />
+                              <img src="img/p3.jpg" alt="user7" />
                             </a>
                           </div>
                         </td>
                         <td class="align-middle text-center text-sm">
-                          <span class="text-xs font-weight-bold"> $2,000 </span>
+                          <span class="text-xs font-weight-bold">43 </span>
                         </td>
                         <td class="align-middle">
                           <div class="progress-wrapper w-75 mx-auto">
@@ -872,7 +870,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="card h-100">
               <div class="card-header pb-0">
-                <h6>Orders overview</h6>
+                <h6>Weekly Project overview</h6>
                 <p class="text-sm">
                   <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
                   <span class="font-weight-bold">24%</span> this month
@@ -886,7 +884,7 @@
                     </span>
                     <div class="timeline-content">
                       <h6 class="text-dark text-sm font-weight-bold mb-0">
-                        $2400, Design changes
+                        240, Design changes
                       </h6>
                       <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
                         22 DEC 7:20 PM
@@ -899,7 +897,7 @@
                     </span>
                     <div class="timeline-content">
                       <h6 class="text-dark text-sm font-weight-bold mb-0">
-                        New order #1832412
+                        Two New Design Started
                       </h6>
                       <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
                         21 DEC 11 PM
@@ -912,7 +910,7 @@
                     </span>
                     <div class="timeline-content">
                       <h6 class="text-dark text-sm font-weight-bold mb-0">
-                        Server payments for April
+                        5 Projects where posted in github
                       </h6>
                       <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
                         21 DEC 9:34 PM
@@ -925,7 +923,7 @@
                     </span>
                     <div class="timeline-content">
                       <h6 class="text-dark text-sm font-weight-bold mb-0">
-                        New card added for order #4395133
+                        grpoup project posted
                       </h6>
                       <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
                         20 DEC 2:20 AM
@@ -938,7 +936,7 @@
                     </span>
                     <div class="timeline-content">
                       <h6 class="text-dark text-sm font-weight-bold mb-0">
-                        Unlock packages for development
+                        Unlock new course
                       </h6>
                       <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
                         18 DEC 4:54 AM
@@ -951,7 +949,7 @@
                     </span>
                     <div class="timeline-content">
                       <h6 class="text-dark text-sm font-weight-bold mb-0">
-                        New order #9583120
+                        New member added
                       </h6>
                       <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
                         17 DEC
